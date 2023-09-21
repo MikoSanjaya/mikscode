@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML tables</title>
+</head>
+<body>
+    <h1>This is a table made using HTML</h1>
+
+    <table border="5" >
+        <tr>
+            <!-- This is a table header -->
+            <th>Num.</th>
+            <th colspan="2">NIM/Name</th>
+            <th>Status</th>
+            <th>Attendance</th>
+        </tr>
+        <tr>
+            <!--This is a table data-->
+            <td>1.</td>
+            <td>345</td>
+            <td>Mik</td>
+            <td rowspan="2">Inside</td>
+            <td>Present</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>567</td>
+            <td>Mik2</td>
+            <td>Absent</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>8910</td>
+            <td>Mik3</td>
+            <td>Outside</td>
+            <td>Present</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>111213</td>
+            <td>Mik4</td>
+            <td>Inside</td>
+            <td rowspan="2">Absent</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>141516</td>
+            <td>Mik5</td>
+            <td>Inside</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <table border="6">
+        <tr>
+            <th>A</th>
+            <th colspan="3">B</th>
+        </tr>
+        <tr>
+            <th rowspan="2">C</th>
+            <th>D</th>
+            <th>E</th>
+            <th rowspan="3">F</th>
+        </tr>
+        <tr>
+            <th>G</th>
+            <th rowspan="2">H</th>
+        </tr>
+        <tr>
+            <th colspan="2">I</th>
+        </tr>
+        <tr>
+            <th colspan="4">J</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML forms</title>
+    <link rel="icon" type="x-icon" href="images/favicon3.ico">
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="action.php" method="GET">
+        <fieldset>
+            <legend>Personal Data:</legend>
+            <!--This is for input type text-->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <br><br>
+            <!--Select element-->
+            <label for="types">choose your type: </label><br>
+            <select id="types" name="type">
+                <option value="sport">sport</option>
+                <option value="retro">retro</option>   
+                <option value="ferring">ferring</option>
+                <option value="naked">naked</option>
+            </select>
+
+            <br><br>
+            <!--Textarea element-->
+            <label for="comment">Write your thoughts: </label><br>
+            <textarea name="comment" rows="10" cols="30"></textarea>
+
+            <br>
+            <!--Input type radio-->
+            <p>choose your gender: </p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <!--Input type password-->
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+
+            <!--Input type checkbox-->
+            <p>choose your hobby(ies): </p>
+            <input type="checkbox" id="hobby1" name="hobby1" value="sleep">
+            <label for="hobby1">sleep</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="more sleep">
+            <label for="hobby2">more sleep</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="being racist while sleeping">
+            <label for="hobby3">being racist while sleeping</label><br>
+
+
+            <!--input type submit-->
+            <input type="submit">
+            
+            <!--Input type reset-->
+            <input type="reset">
+
+            
+        </fieldset>
+    </form>
+</body>
+</html>
