@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--External CSS-->
      <link rel="stylesheet" href="style.css"/>
      <title>Learn CSS</title>
+     <!--internal CSS-->
      <style>
         body {
-            background-color: antiquewhite;
+            /* this is using RGB */ 
+            /* background-color: RGB(250,235,215); */
+            /* background-color: #ffa140; */
+            background-color: HSL(285, 25%, 70%);
+        }
+        h1 {
+            background-color:blanchedalmond;
+            border: 22px solid tomato;
+            border-bottom: 15px solid cadetblue;
+            border-top: 15px solid cadetblue;
+        }
+        h2 {
+            border-style:groove;
+            border-color:chocolate;
         }
      </style>
     </head>
     <body>
+        <!--inline CSS-->
      <h1 style="color: red; text-align: center;">Learning CSS is not fun</h1>
      <p>My name is Miko</p>
+     <h2>Learning CSS border</h2>
     </body>
 </html>
