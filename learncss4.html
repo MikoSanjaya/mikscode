@@ -12,7 +12,7 @@
             padding: 10px 20px;
             background-color: hotpink;
             font-family: Arial, Helvetica, sans-serif;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         a:link {
             color: white;
@@ -22,21 +22,70 @@
         }
         a:hover {
             color: white;
+            background-color: deeppink;
         }
         a:active {
             color: deeppink;
         }
-        body {
-            background-color: crimson;
-        }
         h1 {
+            color: black;
+        }
+        a.ftiunai {
+            border: 3px solid green;
+            background-color: green;
+        }
+        a.blue {
+            background-color: blue;
+            border-color:blue;
+        }
+        ul.web {
+            list-style-type: square;
+            list-style-position: inside;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid black;
+        }
+        ul li {
+            background-color: lightseagreen;
+        }
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+        ul.navbar li a {
+            display: block;
+            color: #000;
+            background-color: #f1f1f1;
+            border-radius: 0;
+            border: none;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #555;
             color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Learn CSS part 1</h1>
+    <h1>Learn CSS part 4</h1>
 
     <a href="https://google.com">Link to google</a>
+    <a class="ftiunai" href="https://fti.unai.edu">FTI UNAI</a>
+    <a class="blue" href="https://unai.edu">unai</a>
+    <p>my favourite foods</p>
+    <ul class="web">
+        <li>rice</li>
+        <li>rice2</li>
+        <li>rice3</li>
+    </ul>
+
+    <ul class="navbar">
+        <li><a href="hello.html">Hello html</a></li>
+        <li><a href="https://fti.unai.edu">FTI UNAI</a></li>
+        <li><a href="https://unai.edu">UNAI</a></li>
+    </ul>
 </body>
 </html>
