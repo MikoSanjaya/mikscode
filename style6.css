@@ -2,20 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
+    padding: 20px;
+    text-align: center  ;
     background-color: lightseagreen;
 }
 
 #sidebar {
-    background-color: lightyellow;
+    width: 25%;
+    float: left;
+    background-color: lightsalmon;
 }
 
 #main {
+    width: 75%;
+    float:right;
     background-color: lightsteelblue;
+    padding: 20px;
 }
 
 #footer {
+    padding: 20px;
+    text-align: center;
+    clear: both;    
     background-color: lightgoldenrodyellow;
+}
+
+li {
+    padding: 10px;
+}
+
+li:hover {
+    font-weight: bold;
+    background-color: salmon;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
