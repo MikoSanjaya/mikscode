@@ -1,15 +1,21 @@
-#header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+#header {
+    background-color: lightseagreen;
 }
 
 #sidebar {
-
+    background-color: lightyellow;
 }
 
 #main {
-
+    background-color: lightsteelblue;
 }
 
 #footer {
-        
+    background-color: lightgoldenrodyellow;
 }
