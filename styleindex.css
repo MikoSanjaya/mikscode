@@ -66,6 +66,10 @@ footer {
     justify-content: space-between;
 }
 
+#footercontainer div {
+    width: 30px;
+}
+
 main div img {
     width: 200px;
     margin: 10px 0;
@@ -77,5 +81,12 @@ h2 {
 }
 
 #copyright {
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid black;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding: 5px 0;
 }
