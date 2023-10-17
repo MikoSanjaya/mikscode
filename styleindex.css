@@ -61,12 +61,21 @@ footer {
     text-align: center;
 }
 
+#footercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 main div img {
-    width: 220px;
+    width: 200px;
     margin: 10px 0;
 }
 
 h2 {
     margin: 20px 0;
     text-align: center;
+}
+
+#copyright {
+    border-top: 1px solid black;
 }
