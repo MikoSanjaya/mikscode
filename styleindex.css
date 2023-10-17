@@ -5,10 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
 header {
     padding: 20px;
-    text-align: center;
     background-color: #cdcdcd;
+    display: flex;
+}
+
+h1 {
+    margin-left: 30px;
 }
 
 nav {
@@ -22,4 +31,42 @@ nav ul {
     list-style-type: none;
     justify-content: space-around;
     text-transform: uppercase;
+}
+
+main img {
+    width: 100%;
+}
+
+nav li:hover {
+    color: gold;
+    font-weight: bolder;
+}
+
+#container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container div {
+    width: 30%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #cdcdcd;
+    padding: 20px;
+    text-align: center;
+}
+
+main div img {
+    width: 220px;
+    margin: 10px 0;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
 }
