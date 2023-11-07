@@ -17,3 +17,20 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+main div{ 
+    padding: 15px;
+}
+
+main {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    h1 {
+        color: blue;
+    }
+}
