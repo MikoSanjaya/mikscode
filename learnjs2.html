@@ -8,6 +8,8 @@
 <body>
     <h1>Learning about JS</h1>
 
+    <button onclick="myMik()">Click me!</button>
+
     <script>
         const pi = 3.14;
         let x = 1;
@@ -15,6 +17,27 @@
 
         x = 2;
         console.log(x);
+        console.log(pi);
+
+        function myMik() {
+            alert("My name is Miko");
+            newFunction();
+        }
+
+        function newFunction() {
+            alert("I don't really like JS");
+        }
+
+        x=3;
+        let y=4;
+
+        function add(x, y) {
+            return x + y;
+        }
+
+        document.write(add(x, y));
+
+
     </script>
 </body>
 </html>
