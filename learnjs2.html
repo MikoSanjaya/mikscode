@@ -10,6 +10,7 @@
 
     <button onclick="myMik()">Click me!</button>
 
+
     <script>
         const pi = 3.14;
         let x = 1;
@@ -30,14 +31,34 @@
 
         x=3;
         let y=4;
+        let z=2;
 
         function add(x, y) {
-            return x + y;
+            return x + y + z;
         }
 
-        document.write(add(x, y));
+        function subtract (a, b) {
+            return a - b;
+        }
+
+        document.write("<br>")
+        document.write(add(x, y, z));
+        document.write("<br>" + subtract(y, z));
 
 
     </script>
+
+    <br><br>
+    Name: <input id="name" type="text"> <button onclick="display()">Send!</button>
+    
+    <script>
+        function display() {
+        let name = document.getElementById("name").value;
+        // alert(name);
+        document.getElementById("ds").innerHTML = name;
+        }
+    </script>
+
+    <h2 id="ds"></h2>
 </body>
 </html>
