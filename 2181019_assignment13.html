@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Mouse over the following text</h2>
+        <p id="myText" onmouseover="myFunction()">Mouse over me</p>
+            <script>
+                function myFunction() {
+                alert("The mouse pointer is over the text!");
+                }
+            </script>
+        <h2>Double-click on the following text</h2>
+        <p id="myText" ondblclick="myFunction()">Double-click me</p>
+            <script>
+                function myFunction() {
+                alert("The text was double-clicked!");
+                }
+            </script>
+        <h2>Click on the following text</h2>
+        <button onclick="myFunction()">Click me</button>
+            <script>
+                function myFunction() {
+                alert("Button was clicked!");
+                }
+            </script>
+        <h1>Hello World!</h1>
+        <p>Press any key or click on the window to close this window.</p>
+             <script>
+                window.onload = function() {
+                alert("The window has finished loading!");
+                window.close();
+                }
+            </script>
+        <h2>Press any key</h2>
+        <p>Press a key and release it to trigger the event</p>
+            <script>
+                document.onkeydown = function() {
+                 alert("A key was pressed!");
+                }
+                </script>
+
+    </body>
+</html>    
