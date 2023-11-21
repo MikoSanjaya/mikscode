@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+:root {
+  --form-control-color: rebeccapurple;
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.__bio-pg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #212428;
+}
+.container {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  border-radius: 15px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container .text {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #212428;
+}
+.container form {
+  padding: 30px 0 0 0;
+}
+.container form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea {
+  height: 70px;
+}
+.input-data input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+.submit-btn input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  background-color: #212428;
+  width: 100%;
+  padding: 14px 0;
+}
+@media (max-width: 700px) {
+  .container .text {
+    font-size: 30px;
+  }
+  .container form {
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row {
+    display: block;
+  }
+  form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+  .submit-btn {
+    width: 40% !important;
+  }
+}
+
+.__checkbox-items {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+}
+
+.__checkbox-items > span {
+  color: #34495e;
+  padding: 0.5rem 0.25rem;
+}
+
+.__checkbox-items > input {
+  height: 25px;
+  width: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #212428;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #2f2f2fc9;
+  cursor: pointer;
+}
+
+.__checkbox-items > input:checked {
+  border: none;
+  background-color: transparent;
+}
+
+.__checkbox-items > input:checked + span::before {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  color: #212428;
+  font-weight: 700;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.3rem;
+}
+
+.__hobbies-title {
+  margin: 12px 0;
+}
+
+.__choose-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  line-height: 1.1;
+  display: grid;
+  color: #34495e;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.__radio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #212428;
+  background-image: none;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #181a1b;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  color: white;
+}
+/* Transition */
+.select:hover::after {
+  color: white;
+}

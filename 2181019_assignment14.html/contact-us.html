@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function validateForm() {
+    var username = document.getElementById("text").value;
+    var password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+        alert("Username and password are required!");
+    } else {
+        alert("Form submitted successfully!");
+    }
+}
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact-us.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="__nav-header">
+      <nav class="__navbar-container __layout">
+        <div class="__navbar-sec">
+          <img
+            class="__navbar-container-logo"
+            src="./assets/logo.svg"
+            alt="hansalogo"
+          />
+          <div class="__navigation-navbar">
+            <a href="./index.html">Home</a>
+            <a href="./biodata.html">Biodata</a>
+            <a href="./contact-us.html">Contact Us</a>
+          </div>
+          <div class="__navbar-cta-btn">
+            <div class="__language-change-button">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/383px-Flag_of_Indonesia.svg.png"
+                alt="indo-flagg"
+                class="__image-indo-flag"
+              />
+              <span>ID</span>
+            </div>
+            <img
+              id="__search-button"
+              class="__navbar-search-btn"
+              src="./assets/search.svg"
+              alt="search"
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="__bio-pg-container">
+      <div class="container">
+        <div class="text">Contact us Form</div>
+        <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Username</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required />
+              <div class="underline"></div>
+              <label for="">Email Address</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input type="password" required />
+              <div class="underline"></div>
+              <label for="">Password</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea rows="8" cols="80" required></textarea>
+              <br />
+              <div class="underline"></div>
+              <label for="">Address</label>
+            </div>
+          </div>
+          <div class="__choose-form">
+            <div>
+              <p class="__hobbies-title">Hobbies</p>
+              <div>
+                <label class="__checkbox-items">
+                  <input type="checkbox" />
+                  <span>Sports</span>
+                </label>
+              </div>
+              <div>
+                <label class="__checkbox-items">
+                  <input type="checkbox" />
+                  <span>Games</span>
+                </label>
+              </div>
+              <div>
+                <label class="__checkbox-items">
+                  <input type="checkbox" />
+                  <span>Studying</span>
+                </label>
+              </div>
+              <div>
+                <label class="__checkbox-items">
+                  <input type="checkbox" />
+                  <span>Cooking</span>
+                </label>
+              </div>
+              <div>
+                <label class="__checkbox-items">
+                  <input type="checkbox" />
+                  <span>Others</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <p class="__hobbies-title">Gender</p>
+              <div class="__radio-container">
+                <label class="form-control">
+                  <input type="radio" name="radio" />
+                  Male
+                </label>
+                <label class="form-control">
+                  <input type="radio" name="radio" />
+                  Female
+                </label>
+                <label class="form-control">
+                  <input type="radio" name="radio" />
+                  Other
+                </label>
+              </div>
+              <div>
+                <p class="__hobbies-title">Religion</p>
+                <div class="select">
+                  <select>
+                    <option value="1">Islam</option>
+                    <option value="2">Protestan</option>
+                    <option value="3">Katolik</option>
+                    <option value="4">Hindu</option>
+                    <option value="5">Budha</option>
+                    <option value="5">Advent</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row submit-btn">
+            <input type="submit" value="SAVE" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
